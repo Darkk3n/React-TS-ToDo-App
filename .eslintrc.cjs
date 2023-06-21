@@ -33,6 +33,8 @@ module.exports = {
     '@typescript-eslint/semi': 'off',
     'react/jsx-no-target-blank': 'off',
     'import/no-absolute-path': 'off',
-    '@typescript-eslint/no-confusing-void-expression': 'off'
+    '@typescript-eslint/no-confusing-void-expression': 'off',
+    'react/prop-types': 'off',
+    '@typescript-eslint/indent': 'off'
   }
 }
