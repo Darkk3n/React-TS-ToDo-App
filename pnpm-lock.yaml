@@ -11,6 +11,9 @@ dependencies:
   react-dom:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
+  todomvc-app-css:
+    specifier: ^2.4.2
+    version: 2.4.2
 
 devDependencies:
   '@types/react':
@@ -2135,6 +2138,10 @@ packages:
     dependencies:
       is-number: 7.0.0
     dev: true
+
+  /todomvc-app-css@2.4.2:
+    resolution: {integrity: sha512-ViAkQ7ed89rmhFIGRsT36njN+97z8+s3XsJnB8E2IKOq+/SLD/6PtSvmTtiwUcVk39qPcjAc/OyeDys4LoJUVg==}
+    dev: false
 
   /tsconfig-paths@3.14.2:
     resolution: {integrity: sha512-o/9iXgCYc5L/JxCHPe3Hvh8Q/2xm5Z+p18PESBU6Ff33695QnCHBEjcytY2q19ua7Mbl/DavtBOLq+oG0RCL+g==}
