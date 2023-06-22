@@ -1,9 +1,9 @@
 import { Todo } from './Todo'
-import { type ListOfTodos } from './types'
+import { type ListOfTodos, type TodoId } from './types'
 
 interface Props {
    todos: ListOfTodos
-   onRemoveTodo: (id: string) => void
+   onRemoveTodo: ({ id }: TodoId) => void
 }
 
 export const Todos: React.FC<Props> = ({ todos, onRemoveTodo }) => (
