@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { Footer } from './Footer';
+import { Header } from './Header';
 import { Todos } from './Todos';
 import { TODO_FILTERS } from './consts';
-import { type FilterValue, type TodoId, type Todo as TodoType } from './types';
+import { type FilterValue, type Todo, type TodoId, type TodoTitle, type Todo as TodoType } from './types';
 
 const mockTodos = [
   {
@@ -62,8 +63,19 @@ const App = (): JSX.Element => {
     setTodos(newTodos)
   }
 
+  const handleAddToDo = ({ title }: TodoTitle): void => {
+    const newTodo: Todo = {
+      id: crypto.randomUUID(),
+      title,
+      completed: false
+    }
+    const newTodos = [...todos, newTodo]
+    setTodos(newTodos)
+  }
+
   return (
     <div className='todoapp'>
+      <Header onAddToDo={handleAddToDo} />
       <Todos todos={filteredTodos} onRemoveTodo={handleRemove} onToogleCompleted={handleCompleted} />
       <Footer activeCount={activeCount}
         filterSelected={filters}
