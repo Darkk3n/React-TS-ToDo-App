@@ -35,6 +35,7 @@ module.exports = {
     'import/no-absolute-path': 'off',
     '@typescript-eslint/no-confusing-void-expression': 'off',
     'react/prop-types': 'off',
-    '@typescript-eslint/indent': 'off'
+    '@typescript-eslint/indent': 'off',
+    '@typescript-eslint/no-unused-vars': 'off'
   }
 }
